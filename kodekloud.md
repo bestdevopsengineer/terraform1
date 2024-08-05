@@ -39,17 +39,16 @@ hashicorp/local                  (hostname)  registry.terraform.io/hashicorp/loc
 ### use many providers
 ![image](https://github.com/user-attachments/assets/1cf2ee2f-2097-44f5-a4d0-00830cfe9889)
 
-## Input Variables
-hardcoding values is not a good idea because it limits the reusability of the code which defeats the purpose of using IAC
+## 6-Input Variables
+ hardcoding values is not a good idea because it limits the reusability of the code which defeats the purpose of using IAC
 WE WANT TO MAKE SURE THAT THE SAME CODE CAN BE USED AGAIN AND AGAIN to deploy resources based on a set of input variables
 that can be provided during the execution.
+
+
 ![image](https://github.com/user-attachments/assets/3790d89d-47c9-4932-9211-b9895681adf1)
 ![image](https://github.com/user-attachments/assets/30e5a5eb-efa6-44af-8e95-416d95c7d18c)
-![image](https://github.com/user-attachments/assets/82d1abb9-62ef-4665-ac1f-a263d737c3fe)
-![image](https://github.com/user-attachments/assets/7c98025b-6eda-4fd0-833a-1936f5bb9bb5)
-![image](https://github.com/user-attachments/assets/a491d93e-6b2a-4594-ba3c-ede8429ba972)
-![image](https://github.com/user-attachments/assets/bf89a24d-7570-4192-9b44-bf746635be98)
-![image](https://github.com/user-attachments/assets/85d08b58-e2d1-42c0-ba71-dce952c6225e)
+![image](https://github.com/user-attachments/assets/b9cb3e3f-3480-4071-b43f-b0f5d29ff411)
+==========
 ![image](https://github.com/user-attachments/assets/c0238802-2e34-4694-ae12-8fe0b8a575f2)
 you can set default variable like this
 ![image](https://github.com/user-attachments/assets/947193e2-74ee-419a-9be4-674aad42b406)
@@ -63,7 +62,7 @@ to use another name instead of terraform
 ![image](https://github.com/user-attachments/assets/4c535864-14de-4176-a83c-f795c98a3270)
 ![image](https://github.com/user-attachments/assets/e1cb4f30-7fdd-4f9f-becb-40e1f7361333)
 
-## Output variables
+## 7-Output variables
 ![image](https://github.com/user-attachments/assets/f68a12a9-07d2-445f-a56f-3944ecd93502)
 ![image](https://github.com/user-attachments/assets/3571e1a0-a2a1-4fb7-b613-fc7f61d52fb5)
 ![image](https://github.com/user-attachments/assets/4e41e443-0972-453c-a3c9-39e8ed3afa7d)
@@ -71,14 +70,36 @@ to use another name instead of terraform
 ## Resource Attributes
 ![image](https://github.com/user-attachments/assets/b5689c24-205e-419a-9039-688cd227a5f0)
 
-## Resource Dependencies
+## 8-Resource Dependencies
 ![image](https://github.com/user-attachments/assets/e87af545-481f-4603-944a-fbe2f6201aca)
 ![image](https://github.com/user-attachments/assets/4661bcf8-5309-44ad-9c9f-24537b543f78)
 
-## Terraform State
-used by terraform to mathc the  resource configuration to real world infrastructure
-Commands 
-Mutable vs  Immutable
+## 9-Terraform State
+used by terraform to match the  resource configuration to real world infrastructure
+### purpose state: 
+-collaboration (when working as a team save it in remote data store: S3/hashicorp consul/google cloud storage/terraform cloud )
+
+-tracking metadata(know what to delete even with dependencies)
+
+-performance(make terraform to refer to the satefile alone while running cmd and bypass having to refresh state every time)
+![image](https://github.com/user-attachments/assets/8e8261d6-97d1-4db5-bdf2-9fa8386f6067)
+###  terraform state considerations
+-sensitive data
+
+-no manually edit
+## 10-TERRAFORM Commands 
+CHECK IF THE SYNTAXE IS CORRECT WITH
+![image](https://github.com/user-attachments/assets/d513a279-568f-4a66-ae96-76fb072dc0e3)
+![image](https://github.com/user-attachments/assets/6424600d-2261-4929-b768-eac86bb53a73)
+it should be file_permission not file_permissions
+![image](https://github.com/user-attachments/assets/f527a5aa-6de2-4f4a-ae15-307b16e6f4de)
+![image](https://github.com/user-attachments/assets/c4c282f2-ee7b-46fb-9f77-f7c9290d16a3)
+![image](https://github.com/user-attachments/assets/fc9af258-e990-47e8-9485-ef975e5c33db)
+![image](https://github.com/user-attachments/assets/da13011e-4e9a-4b54-b0b8-90312f1767b0)
+![image](https://github.com/user-attachments/assets/dfe9162e-e662-4956-baa9-9a6f3d3f091b)
+
+## 11-Mutable vs  Immutable
+
 LifeCycle Rules
 Datasources
 Meta Arguments 
