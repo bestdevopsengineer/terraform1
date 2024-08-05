@@ -1,12 +1,12 @@
 https://kodekloud.com/pages/community
 
 1-Traditional IT & Challenges
-Slow Deployment 
-Expensive 
-Limited Automation 
-Human Error 
-Wasted Resources 
-Inconsistency
+-Slow Deployment 
+-Expensive 
+-Limited Automation 
+-Human Error 
+-Wasted Resources 
+-Inconsistency
 
 2-Introduction to IaC
 Types of IaC Tools: 
