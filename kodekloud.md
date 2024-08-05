@@ -41,7 +41,7 @@ hashicorp/local                  (hostname)  registry.terraform.io/hashicorp/loc
 
 ## 6-Input Variables
  hardcoding values is not a good idea because it limits the reusability of the code which defeats the purpose of using IAC
-WE WANT TO MAKE SURE THAT THE SAME CODE CAN BE USED AGAIN AND AGAIN to deploy resources based on a set of input variables
+We want to make sure that the same code can be used again and again to deploy resources based on a set of input variables
 that can be provided during the execution.
 
 
