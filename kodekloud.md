@@ -1,6 +1,7 @@
 https://kodekloud.com/pages/community
 
-[!NOTE] 1-Traditional IT & Challenges
+>[!NOTE]
+>1-Traditional IT & Challenges
 -Slow Deployment 
 -Expensive 
 -Limited Automation 
