@@ -10,6 +10,7 @@ Inconsistency
 
 2-Introduction to IaC
 Types of IaC Tools: 
+![image](https://github.com/user-attachments/assets/649cb22f-a4c5-4bf0-bf66-dbbaf5e5e9ea)
 
 Why Terraform?
 HCL Basics
